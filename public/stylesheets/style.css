@@ -1,0 +1,17 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.form-control {
+    display: block;
+    width: 25%;
+}
+
+
+.table-striped{
+	background-color: #dd2d91;}

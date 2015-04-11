@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+		<div class="navbar-header">
+ 			<h1><%= header %></h1>
+			<p>Welcome to <%= body %></p>
+		</div>
+		</div>
+	</nav>
+
+	<div class="">
+		<form method="POST" action="/todo">
+			<div class="form_item">
+				<input type="text" name="title" placeholder Task" required>
+			</div>
+
+			<div class="form-item">
+					<textarea name="description" placeholder="Description"></textarea>
+			</div>
+
+			<div class="form_item">
+				<label for="Priority">Priority Level</label>
+					<select name="priority" id="priority">
+						<option value="1">Red (High)</option>
+						<option value="2">Yellow</option>
+						<option value="3">Blue</option>
+					</select>
+			</div>
+
+	<div class-"form_item">
+		<label for="due_date">Due Date</label>
+		<input type="date" name="due_date">
+	</div>
+
+	<div>
+		<label for="complete">Check for Complete</label>
+		<input type="checkbox" name="complete">
+	</div>
+<br>
+	<div class="button">
+	<button type="submit">Save</button>
+</div>
+	</form>
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src ="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="/javascripts/validate.js"></script>
+
+</body>
+</html>
+
+

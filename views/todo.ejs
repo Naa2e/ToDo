@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Hey y'all</title>
+ <link rel='stylesheet' href='/stylesheets/style.css' />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h1><%= greeting %></h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Details</th>
+            <th>Priority</th>
+            <th>Due Date</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% names.forEach(function(name){%>
+      <tr>
+      <td><%= name.name %></td>
+      <td><%= name.description %></td>
+      <td><%= name.priority %></td>
+      <td><%= name.due_date %></td>
+      </tr>
+     <% }) %>
+  </tbody>
+
+</body>
+</html>
